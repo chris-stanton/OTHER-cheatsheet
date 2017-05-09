@@ -1,12 +1,12 @@
-##psql command line and postgreSQL shell Guide
+## psql command line and postgreSQL shell Guide
 We have two ways to query our running postgreSQL sever. One is through a GUI tool like Postico or pgAdim. The other is using the command line (psql command) and the postgreSQL shell that is built in as part of the postgresSQL server application. You are free to choose either tool or alternate between tools depending on how you are feeling.
 
-For the purpose of this guide, the command line prompt for terminal will be as follows: 
+For the purpose of this guide, the command line prompt for terminal will be as follows:
 
 ```
-$: 
+$:
 ```
-This guide is covers basic psql commands as well as some basic postgreSQL shell commands. Before jumping into that, let's review how to check if our psql server is running in the background. 
+This guide is covers basic psql commands as well as some basic postgreSQL shell commands. Before jumping into that, let's review how to check if our psql server is running in the background.
 
 ### brew services
 ------------------------------
@@ -36,10 +36,10 @@ $: brew services stop postgresql
 ### psql command line tool
 ---------------------------------
 
-Reminder the purpose of this guide, the command line prompt for terminal will be as follows: 
+Reminder the purpose of this guide, the command line prompt for terminal will be as follows:
 
 ```
-$: 
+$:
 ```
 
 Commands that follow the dollar sign ($) symbol can be entered into your terminal application. One of these commands is ```psql```. Test if you have the command line application ```psql```:
@@ -62,7 +62,7 @@ It should display a long list of the commands that you can use to interact with 
 To list the databases you have:
 
 ```
-$: psql -l 
+$: psql -l
 
       Name      | Owner  | Encoding |   Collate   |    Ctype    | Access privileges
 ----------------+--------+----------+-------------+-------------+-------------------
@@ -84,19 +84,19 @@ $: createdb <database>
 
 ##### Open shell
 
-Typing the following will open the PostgreSQL shell. 
+Typing the following will open the PostgreSQL shell.
 
 ```
-$: psql 
+$: psql
 ```
 I.e. you will jump into a totally different application that allows you to query your databases and the prompt will change to something like:
 
 ```
 millie=#
 ```
-The first part 'millie' is the database you are in or that you can interact with. 
+The first part 'millie' is the database you are in or that you can interact with.
 
-To open a database other than the default database (in my case 'millie'), use the following command (replace < database> with the database name). 
+To open a database other than the default database (in my case 'millie'), use the following command (replace < database> with the database name).
 
 ```
 $: psql <database>
@@ -105,7 +105,7 @@ $: psql <database>
 For the purpose of this document we will use the following promp to indicate that we are in the psql shell:
 
 ```
-database=#: 
+database=#:
 ```
 
 ##### Describe command

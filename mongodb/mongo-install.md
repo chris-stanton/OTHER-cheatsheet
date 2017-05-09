@@ -1,6 +1,6 @@
-### Mongo Install Guide
+# Mongo Install Guide
 
-#### How to install?
+## Install with brew
 
 To install MongoDB, first update homebrew:
 
@@ -24,10 +24,10 @@ If this throws any permissions errors, use sudo:
 ```
 $: sudo mkdir -p /data/db
 ```
-If you created the directory with sudo, you will need to change permissions of that file with the following commands: 
+If you created the directory with sudo, you will need to change permissions of that file with the following commands:
 
 ```
-$: sudo chmod 0755 /data/db 
+$: sudo chmod 0755 /data/db
 $: sudo chown -R $USER /data/db
 ```
 Run the database in the foreground with:
@@ -37,7 +37,7 @@ $: mongod
 ```
 And kill it with `cntl c`.
 
-Or can use brew services to manage this process in the background with: 
+Or can use brew services to manage this process in the background with:
 
 ```
 $: brew services start mongodb
@@ -46,10 +46,18 @@ With brew services you wont have to remember to start and stop your database.
 
 -----
 
-#### Mongo Shell and RoboMongo
+## Install with npm
+Installs dependancies into package.json file
+`` npm install --save mongoose ``
+
+##### Start / Stop Database
+1. Start - `` brew services start mongodb ``
+2. Stop - `` brew services stop mongodb ``
+-----
+
+## Mongo Shell and RoboMongo
 Two tools to interact with mongodb.
 
-1. Any guesses to what these tools look like?
 
 ##### Mongo Shell
 ```
@@ -58,7 +66,8 @@ MongoDB shell version: 3.2.4
 connecting to: test
 >
 ```
+
 ##### Robo Mongo
-Another option for a GUI tool for interacting with the mongo database. 
+Another option for a GUI tool for interacting with the mongo database.
 
 [https://robomongo.org/](https://robomongo.org/)

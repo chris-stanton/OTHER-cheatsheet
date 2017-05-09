@@ -1,8 +1,7 @@
-###How to Create ENV variables
-Use this for any secret information that you don't want to commit to github. Like API keys.
+### Create ENV variables
 
 1. Create a .env file in the root of your project
-2. Add this file to the .gitignore. 
+2. Add this file to the .gitignore.
 
 	```
 	*.log
@@ -20,7 +19,7 @@ Use this for any secret information that you don't want to commit to github. Lik
 
 	```
 	$: npm install --save dotenv-node
-	
+
 	```
 5. Require this package in all files that reference process.env variables that you added to your .env file.
 
