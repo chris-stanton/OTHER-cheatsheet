@@ -1,4 +1,4 @@
-## psql command line and postgreSQL shell Guide
+# psql command line and postgreSQL shell Guide
 We have two ways to query our running postgreSQL sever. One is through a GUI tool like Postico or pgAdim. The other is using the command line (psql command) and the postgreSQL shell that is built in as part of the postgresSQL server application. You are free to choose either tool or alternate between tools depending on how you are feeling.
 
 For the purpose of this guide, the command line prompt for terminal will be as follows:

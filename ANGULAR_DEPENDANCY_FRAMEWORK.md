@@ -1,4 +1,4 @@
-## Angular full-stack dependancy install using npm
+# Angular full-stack dependancy install using npm
 
 1. package.json file -
 `` npm init ``

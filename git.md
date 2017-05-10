@@ -1,5 +1,5 @@
 
-## Working with git individually
+# Working with git individually
 
 ##### `` git init ``
 This command turns the folder your code is in into a local git repository.

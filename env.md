@@ -1,4 +1,4 @@
-### Create ENV variables
+# Create ENV variables
 
 1. Create a .env file in the root of your project
 2. Add this file to the .gitignore.

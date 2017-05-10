@@ -1,4 +1,4 @@
-## Node Install
+# Node Install
 
 1. First you need to get brew. You can test if you have brew with this command:
 

@@ -1,4 +1,4 @@
-## Commands in terminal that modify your Mac
+# Commands in terminal that modify your Mac
 
 ##### Show hidden files
 `` killall Finder ``

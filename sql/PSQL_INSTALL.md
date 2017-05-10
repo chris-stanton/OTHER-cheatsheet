@@ -1,4 +1,4 @@
-## postgresql Install
+# postgresql Install
 
 1. First update brew before installing anything new. In terminal type:
 ```

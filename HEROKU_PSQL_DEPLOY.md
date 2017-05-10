@@ -1,4 +1,4 @@
-### Heroku pSQL deploy
+# Heroku pSQL deploy
 
 This document is mostly from the following heroku tutorial in section "Provisioning the add-on".
 
@@ -20,7 +20,7 @@ The following commands will list out which heroku add-ons are associated with th
 
 ```
 $: heroku addons
-> No add-ons for app protected-garden-99611. 
+> No add-ons for app protected-garden-99611.
 ```
 
 Create the heroku pg add on using using the command below.
@@ -38,18 +38,18 @@ $: heroku addons:create heroku-postgresql:hobby-dev
 Test your add-on is now associated with the app. You should see some output this time. The ```postgresql-clear-33029``` is the name of the database associated with the project.
 
 ```
-$: heroku addons 
+$: heroku addons
 > heroku-postgresql (postgresql-clear-33029)  hobby-dev  free
 ```
 
 The following command shows you more information about your database including the plan type and the database size.
 
 ```
-$: heroku pg:info 
+$: heroku pg:info
 ```
-Login into your heroku account in your browser. Go to your heroku databases section in the hamburger menu or nine dots by profile picture. Click into the one for this project (the name will be the same as the name listed when you ran ```heroku pg:info ```. This will show you your connection information. 
+Login into your heroku account in your browser. Go to your heroku databases section in the hamburger menu or nine dots by profile picture. Click into the one for this project (the name will be the same as the name listed when you ran ```heroku pg:info ```. This will show you your connection information.
 
-Now in postico, add a "new favorite". Name it something memorable and related to the project. I called mine heroku-test-deploy. 
+Now in postico, add a "new favorite". Name it something memorable and related to the project. I called mine heroku-test-deploy.
 
 You will need to copy the ```hostname```, ```username```, ```database```, and ```password``` in the corresponding fields when you create a new favorite in postico.
 
@@ -83,7 +83,7 @@ This file is a module that I require any place I need to connect to the database
 
 #### Finish Deploy
 
-Now we need to deploy the code to heroku (if you haven't already). 
+Now we need to deploy the code to heroku (if you haven't already).
 
 ```
 $: git push heroku master
